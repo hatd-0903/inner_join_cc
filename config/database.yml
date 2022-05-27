@@ -1,0 +1,13 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8mb4
+  host: db
+  pool: 5
+  username: root
+  password: root
+  variables:
+    sql_mode: STRICT_ALL_TABLES
+
+development:
+  <<: *default
+  database: inner_join_cc
